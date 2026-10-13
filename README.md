@@ -91,7 +91,3 @@ Evaluation uses one GPU, greedy decoding, and 4,096 generated tokens. Independen
 ## Compute accounting
 
 Training records timed training GPU-hours. Evaluation records generation and scoring after loading. Additionally measure construction and all development evaluations, including unselected candidates, for method-level comparisons. Exclude final tests consistently. Report CPU-only construction separately. Local timers do not replace end-to-end allocation accounting.
-
-## Algorithmic reference
-
-The trajectory construction follows [You Only Need Minimal RLVR Training: Extrapolating LLMs via Rank-1 Trajectories](https://arxiv.org/abs/2605.21468). This release contains core algorithms and portable entry points, rather than experiment-management infrastructure.
